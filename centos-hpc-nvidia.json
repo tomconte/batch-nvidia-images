@@ -27,7 +27,7 @@
   "provisioners": [
     {
       "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E /bin/bash -x '{{ .Path }}'",
-      "script": "install-nvidia.sh",
+      "script": "install-nvidia-centos.sh",
       "type": "shell"
     },
     {
