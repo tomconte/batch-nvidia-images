@@ -53,3 +53,9 @@ or:
 ```
 az vm create -n ubuntu-smoke-test -g ubuntu-nvidia --image ubuntu-nvidia --size Standard_NV6_Promo --ssh-key-value ~/.ssh/id_rsa.pub
 ```
+
+## Using the images with Azure Batch
+
+Nota bene: in order to use a custom image in a Batch pool, it is recommended to use the Shared Image Gallery service. The article below, from the Batch Shipyard project documentation, gives some indications on how to do this.
+
+[Creating Images for use with Azure Batch and Batch Shipyard](https://batch-shipyard.readthedocs.io/en/latest/63-batch-shipyard-custom-images/#creating-images-for-use-with-azure-batch-and-batch-shipyard)
